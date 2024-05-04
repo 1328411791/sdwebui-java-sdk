@@ -16,6 +16,7 @@ import org.apache.hc.core5.http.HttpHeaders;
 import org.apache.hc.core5.http.io.entity.StringEntity;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 public class DefaultImage2ImageService implements Image2Image {
 

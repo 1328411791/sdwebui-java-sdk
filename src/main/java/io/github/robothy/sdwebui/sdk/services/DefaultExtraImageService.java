@@ -16,6 +16,7 @@ import org.apache.hc.core5.http.HttpEntity;
 import org.apache.hc.core5.http.io.entity.StringEntity;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 public class DefaultExtraImageService implements ExtraImage {
 
