@@ -52,7 +52,7 @@ public class DefaultTxt2ImageService implements Txt2Image {
     try {
       String payload = this.beanContainer.getBean(ObjectMapper.class)
         .writeValueAsString(options);
-      return new StringEntity(payload);
+      return new StringEntity(payload,StandardCharsets.UTF_8);
     } catch (JsonProcessingException e) {
       throw new RuntimeException(e);
     }

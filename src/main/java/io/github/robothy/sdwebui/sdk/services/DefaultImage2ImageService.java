@@ -40,7 +40,7 @@ public class DefaultImage2ImageService implements Image2Image {
   ClassicHttpRequest buildRequest(Image2ImageOptions options) {
     String url = container.getBean(SdWebuiOptions.class).getEndpoint() + IMG2IMG_PATH;
     ClassicHttpRequest request = new HttpPost(url);
-    request.setEntity(new StringEntity(JsonUtils.toJson(options)));
+    request.setEntity(new StringEntity(JsonUtils.toJson(options), StandardCharsets.UTF_8));
     request.addHeader(HttpHeaders.CONTENT_TYPE, "application/json");
     return request;
   }
